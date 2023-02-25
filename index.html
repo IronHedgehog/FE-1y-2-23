@@ -4,23 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lesson2</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      h1,
+      span {
+        color: blue;
+      }
+    </style>
+
+    <title>lesson3</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
-        <a href="./index.html"><span style="color: blue">Web</span>Studio </a>
+        <a href="./index.html"
+          ><span class="span1" style="color: green">Web</span>Studio
+        </a>
 
-        <ul>
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="./partfolio.html">Портфоліо</a></li>
-          <li><a href="./example.html">Контакти</a></li>
+        <h1 class="heading">asdasd</h1>
+        <h2>wqeqwe</h2>
+        <h3>zxczxc</h3>
+        <h4>fghfgh</h4>
+        <h5>vbnvbn</h5>
+        <h6>rtyrty</h6>
+
+        <ul style="display: flex">
+          <li class="list-item">
+            <a class="link" href="./index.html">Студія</a>
+          </li>
+          <li class="list-item">
+            <a class="link" href="./partfolio.html">Портфоліо</a>
+          </li>
+          <li class="list-item">
+            <a
+              class="link"
+              href="https://validator.w3.org/#validate_by_input"
+              target="_blank"
+              >W3 validator</a
+            >
+          </li>
         </ul>
       </nav>
 
       <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a class="link" href="tel:380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
@@ -29,18 +62,34 @@
         <button>Замовити послугу</button>
       </section>
       <section>
-        <h2>Про нас</h2>
+        <h2 id="heading2" class="plus">Про нас</h2>
         <ul>
           <li>
             <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>
+            <p class="text text1">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
+
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+
+            <p></p>
           </li>
           <li>
             <h3>ПУНКТУАЛЬНІСТЬ</h3>
-            <p>
+            <p class="p">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
@@ -66,10 +115,15 @@
 
         <ul>
           <li>
-            <img src="./images/1.jpg" alt="" width="200" />
+            <img src="./images/img1.jpg" alt="" width="200" height="250" />
           </li>
           <li>
-            <img src="./images/1.jpg" alt="" width="200" />
+            <img src="images/1.jpg" width="250" height="200" alt="img" />
+            <img
+              src="https://bipbap.ru/wp-content/uploads/2017/04/0_7c779_5df17311_orig.jpg"
+              alt=""
+              width="200"
+            />
           </li>
           <li>
             <img src="./images/1.jpg" alt="" width="200" />
@@ -84,7 +138,7 @@
           </li>
         </ul>
 
-        <button>Load more</button>
+        <button class="button" type="submit">Load more</button>
       </section>
     </main>
   </body>

@@ -1,0 +1,87 @@
+body {
+  color: darkgreen;
+  font-size: 25px;
+  border: 5px double red;
+}
+
+.p {
+  border: inherit;
+}
+
+header {
+  color: darkorchid;
+  border: inherit;
+}
+
+.text1 {
+  color: blue;
+}
+
+.text {
+  width: 420px;
+  height: 76px;
+
+  font-family: "Playfair Display" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #626262;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  border: inherit;
+}
+
+#heading2 {
+  color: brown;
+}
+
+.plus {
+  color: blueviolet;
+}
+
+header h1 {
+  color: #626262;
+}
+
+button[type="submit"] {
+  color: black;
+}
+
+.span1 {
+  color: darkblue;
+  background-color: darkblue;
+}
+
+.link:hover {
+  color: red;
+}
+
+.header:hover,
+.header:active {
+  background-color: black;
+}
+
+.button:active {
+  background-color: black;
+  color: red;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+a:visited {
+  color: blue;
+}
+.list-item:nth-child(even) {
+  background-color: darkred;
+}
