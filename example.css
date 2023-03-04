@@ -1,0 +1,90 @@
+ol,
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-Regular.ttf) format("ttf");
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #101010;
+}
+
+.nav-list__item:nth-child(odd) {
+  background-color: blue;
+}
+.nav-list__item:nth-child(even) {
+  background-color: yellow;
+}
+
+.nav-text {
+  color: #101010;
+}
+
+.nav-text:hover {
+  color: #7837f3;
+  cursor: pointer;
+}
+
+.contacts-item {
+  background-color: brown;
+}
+
+.main-heading {
+  text-transform: uppercase;
+}
+
+.hero-text {
+  text-indent: 15%;
+
+  word-spacing: 50px;
+  letter-spacing: 10px;
+
+  font-style: italic;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 60px;
+
+  text-align: justify;
+  vertical-align: baseline;
+}
+
+.asdas {
+  vertical-align: sub;
+}
+
+.p {
+  width: 270px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  vertical-align: baseline;
+
+  color: #757575;
+}
+
+p {
+  width: 270px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
