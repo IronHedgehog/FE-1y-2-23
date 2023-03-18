@@ -61,9 +61,7 @@ button[type="submit"] {
   background-color: darkblue;
 }
 
-.link:hover {
-  /* color: red; */
-}
+
 
 .header:hover,
 .header:active {

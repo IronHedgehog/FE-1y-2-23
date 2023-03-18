@@ -48,7 +48,7 @@ img {
   src: url(./assets/fonts/Inter-Regular.ttf) format("ttf");
 }
 
-.nav-list__item:nth-child(odd) {
+/* .nav-list__item:nth-child(odd) {
   background-color: blue;
 }
 .nav-list__item:nth-child(even) {
@@ -83,7 +83,7 @@ img {
   font-size: 57px;
   line-height: 60px;
 
-  text-align: justify;
+  text-align: center;
   vertical-align: baseline;
 }
 
@@ -124,4 +124,261 @@ p {
 
 .button {
   border: 5px solid red;
+  border-radius: 50%;
+} */
+
+/* ------------------------------------- HEADER ------------------------------------------- */
+
+.header {
+  position: absolute;
+
+  display: flex;
+
+  padding-top: 25px;
+  margin-left: 200px;
+}
+
+.nav {
+  margin-right: 255px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list__item::before {
+  content: "";
+  display: block;
+
+  width: 270px;
+  height: 120px;
+
+  background: black;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bcg::before {
+  background-image: url(./images/bcg_opt.jpg);
+}
+.bcg1::before {
+  background-image: url(./images/bck2.jpg);
+}
+
+.nav-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav-text::first-letter {
+  font-size: 15px;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-text {
+  height: 24px;
+
+  display: inline-block;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: #e4d8cc;
+}
+
+.contacts-phone {
+  height: 24px;
+
+  display: inline-block;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: #e4d8cc;
+}
+
+/*-------------------------------------- HERO -------------------------------*/
+
+.hero {
+  padding: 410px 380px 115px 65px;
+
+  background-image: url(./images/IMAGE__opt.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.overlay {
+  background: rgba(47, 48, 58, 0.4);
+}
+
+.hero__heading {
+  width: 838px;
+
+  margin-bottom: 15px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 60px;
+
+  color: #e4d8cc;
+}
+
+html {
+  font-size: 16px;
+}
+
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+
+  width: 1280px;
+  height: 1px;
+
+  background-color: black;
+}
+
+.hero__text::first-letter {
+  font-size: 4rem;
+}
+
+.hero__heading::first-line {
+  font-size: 1.25em;
+}
+
+.hero__text {
+  width: 561px;
+
+  margin-bottom: 40px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #c3bab1;
+}
+
+.button--container {
+  display: flex;
+}
+
+.hero__link {
+  display: block;
+
+  margin-right: 15px;
+
+  width: 218px;
+  height: 52px;
+
+  background: #7837f3;
+  border: 2px solid #7837f3;
+  border-radius: 100px;
+}
+
+.hero__link2 {
+  width: 170px;
+  height: 52px;
+
+  background: rgba(228, 216, 204, 0.5);
+  border-radius: 100px;
+}
+
+.hero__link--text {
+  display: inline-block;
+
+  padding: 11px 35px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__link--text1 {
+  display: inline-block;
+
+  padding: 13px 21px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* about */
+
+.about__list {
+  display: flex;
+  justify-content: center;
+}
+
+.about__list--item {
+  position: relative;
+  width: 370px;
+}
+
+.about__list--item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about__img {
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 0;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  width: 370px;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+.about__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
