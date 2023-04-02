@@ -200,12 +200,12 @@ table {
   border: none;
 }
 
-.hero {
+/* .hero {
   background-image: url(./images/hero-back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 .overlay {
   /* display: flex;
   flex-direction: column;
@@ -255,4 +255,65 @@ header {
   height: 4px;
 
   background-color: #2196f3;
+}
+
+/* ---------------------------------------------------- */
+
+.hero {
+  padding: 200px 450px;
+
+  background-image: url(./images/hero-back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-blur {
+  width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-blur-heading {
+  width: 696px;
+
+  margin: 0 auto 30px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+
+  text-align: center;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.hero-blur-button {
+  width: 216px;
+  height: 50px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* -----------------------------переваги----------------------------- */
+.section {
+  padding: 95px 215px;
+}
+
+.section-list {
+  display: flex;
+}
+
+.section-list-item {
+  width: 270px;
+}
+
+.section-list-item:not(:last-child) {
+  margin-right: 30px;
 }
