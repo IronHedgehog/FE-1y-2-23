@@ -4,88 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lesson2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Slider</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="./index.html"><span style="color: blue">Web</span>Studio </a>
-
         <ul>
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="./partfolio.html">Портфоліо</a></li>
-          <li><a href="./example.html">Контакти</a></li>
+          <li><a href="#animate">Анімована коробка</a></li>
+          <li><a href="#slider">Слайдер</a></li>
         </ul>
       </nav>
-
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:380961111111">+38 096 111 11 11</a></li>
-      </ul>
     </header>
-    <main>
-      <section class="hero">
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button>Замовити послугу</button>
-      </section>
-      <section>
-        <h2>Про нас</h2>
-        <ul>
-          <li>
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3>ПУНКТУАЛЬНІСТЬ</h3>
-            <p>
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3>ПЛАНУВАННЯ</h3>
-            <p>
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
-      </section>
+    <div id="cursor"></div>
 
-      <section>
-        <h2>Чим ми займаємося</h2>
+    <section class="about container">
+      <div class="about-text-wrapper">
+        <h2 class="about-headind">Про збір коштів</h2>
+        <p class="about-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+      </div>
 
-        <ul>
-          <li>
-            <img src="./images/1.jpg" alt="" width="200" />
-          </li>
-          <li>
-            <img src="./images/1.jpg" alt="" width="200" />
-          </li>
-          <li>
-            <img src="./images/1.jpg" alt="" width="200" />
-            <p>LIFESTYLE</p>
-            <h3>More than just a music festival</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
-            </p>
-          </li>
-        </ul>
+      <ul class="about-photo__list">
+        <li class="about-photo__list--item">
+          <img class="photo" src="./img/warior-opt.jpg" alt="warior" />
+        </li>
+        <li class="about-photo__list--item bottom-photo">
+          <img class="photo" src="./img/warior2-opt.jpg" alt="warior2" />
+        </li>
+      </ul>
+    </section>
 
-        <button>Load more</button>
-      </section>
-    </main>
+    <section class="about reverse container">
+      <div class="about-text-wrapper">
+        <h2 class="about-headind">Про нас</h2>
+        <p class="about-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+      </div>
+
+      <ul class="about-photo__list">
+        <li class="about-photo__list--item">
+          <img class="photo" src="./img/warior-opt.jpg" alt="warior" />
+        </li>
+        <li class="about-photo__list--item bottom-photo">
+          <img class="photo" src="./img/warior2-opt.jpg" alt="warior2" />
+        </li>
+      </ul>
+    </section>
+
+    <div id="animate" class="box animate__animated animate__rollIn">
+      <h1 class="animate__animated animate__fadeIn">
+        Основний заголовок сторінки
+      </h1>
+      <img class="img" src="./img/image1.jpg" alt="" />
+    </div>
+
+    <div id="slider" class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img class="img" src="./img/image1.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img class="img" src="./img/image1.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img class="img" src="./img/kora1.jpg" alt="" />
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <footer>
+      <p class="copyright">&#169 2022 trips</p>
+    </footer>
+
+    <script src="./index.js" type="module"></script>
+    <script src="./cursor.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>
