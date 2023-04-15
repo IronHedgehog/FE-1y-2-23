@@ -285,3 +285,166 @@ body {
   text-align: center;
   margin: 0 auto;
 }
+
+/* -------------------------------FORM -------------------------------- */
+
+body {
+  box-sizing: border-box;
+
+  background-color: grey;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+
+  width: 1005px;
+  height: 600px;
+  border-radius: 20px;
+
+  padding: 14px 55px 115px 45px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 10;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.form__input {
+  display: block;
+
+  width: 519px;
+  height: 55px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 50px;
+
+  padding-left: 25px;
+  margin-bottom: 65px;
+  margin-right: 55px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #959595;
+}
+
+.input-unique {
+  width: 690px;
+  height: 60px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #8d8d8d;
+
+  padding-right: 265px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 50px;
+}
+
+.confirm__button {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  width: 250px;
+  height: 50px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #8d8d8d;
+
+  opacity: 0.5;
+  border: 1px solid #000000;
+  border-radius: 50px;
+}
+
+.button {
+  width: 250px;
+  height: 70px;
+}
+
+.modal--image {
+  width: 450px;
+  height: 446px;
+
+  margin-top: 70px;
+}
+
+.button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.icon-close {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  fill: red;
+  /* font-size: 30px; */
+}
+
+.wrapper {
+  width: 1000px;
+  height: 1000px;
+  color: wheat;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-rows: minmax(20px, 300px);
+}
+
+.first {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
