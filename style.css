@@ -186,3 +186,12 @@
     fill: rgb(61, 112, 61);
   }
 }
+
+.insta {
+  font-size: 90px;
+  color: yellow;
+}
+
+.insta:hover {
+  font-size: 200px;
+}
