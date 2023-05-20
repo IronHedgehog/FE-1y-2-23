@@ -195,3 +195,67 @@
 .insta:hover {
   font-size: 200px;
 }
+
+.icon-class {
+  font-size: 96px;
+  color: #9f17de;
+}
+
+.pos {
+  position: relative;
+
+  left: 20px;
+  top: 15px;
+}
+
+.insta1 {
+  width: 30px;
+  color: yellow;
+
+  position: absolute;
+  left: 4;
+  top: 0;
+  z-index: 1;
+}
+
+.insta2 {
+  position: absolute;
+  left: 23px;
+  top: 15px;
+
+  color: green;
+  z-index: 1;
+}
+
+.insta3 {
+  position: relative;
+  color: red;
+  width: 100px;
+
+  left: 13px;
+  top: 7px;
+  z-index: 2;
+}
+
+.head {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  z-index: 10;
+}
+
+.color {
+  position: sticky;
+
+  top: 50%;
+  left: 50%;
+}
+
+.lorem {
+  width: 100px;
+  height: 100px;
+  font-size: 90px;
+
+  overflow: scroll;
+}
