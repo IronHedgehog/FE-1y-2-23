@@ -1,114 +1,44 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul,
-li {
+ol {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
+.content {
+  padding: 30px 3%;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
+.grid_body {
+  display: grid;
+  /* grid-template-columns: 30% 200px 50%; */
+  /* grid-template-columns: 33.3333% 33.3333% 33.3333%; */
+  /* grid-template-columns: minmax(150px, 1fr) 1fr 2fr; */
 
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  /* grid-template-columns: auto 1fr auto; */
+  /* grid-template-rows: repeat(2, auto); */
+
+  /* grid-template-columns: fit-content(300px) 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: 30px;
+
+  /* column-gap: 30px;
+  row-gap: 10px; */
+  /* grid-template-rows: repeat(2, 50%); */
 }
-
-.header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 20px 15px;
-    justify-content: initial;
-  }
-}
-
-.logo {
-  width: 134px;
-  height: 28px;
-
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-
-  color: black;
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 85px;
-  }
-}
-
-.web {
-  color: #2196f3;
-}
-
-.burger-menu {
-  width: 40px;
-  height: 40px;
-}
-
-@media screen and (min-width: 768px) {
-  .burger-menu {
-    display: none;
-  }
-}
-
-.nav-bar {
-  margin-right: 120px;
-}
-
-@media screen and (max-width: 767px) {
-  .nav-bar {
-    display: none;
-  }
-}
-
-.nav-list {
-  display: flex;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-link {
-  display: block;
-  height: 16px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #212121;
-}
-
-@media screen and (max-width: 767px) {
-  .contact-list {
-    display: none;
-  }
+.grid-item {
+  text-align: center;
+  border: 2px double black;
+  padding: 20px;
 }
