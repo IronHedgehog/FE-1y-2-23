@@ -1,44 +1,105 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-ul,
-ol {
+ul {
   list-style: none;
 }
 
 .wrapper {
   min-height: 100%;
+  max-width: 1200px;
+  margin: auto;
   overflow: hidden;
 }
 
 .content {
-  padding: 30px 3%;
+  padding: 30px 15px;
 }
 
 .grid_body {
   display: grid;
-  /* grid-template-columns: 30% 200px 50%; */
-  /* grid-template-columns: 33.3333% 33.3333% 33.3333%; */
-  /* grid-template-columns: minmax(150px, 1fr) 1fr 2fr; */
 
+  /* grid-template-columns: 33.333% 33.333% 33.333%; */
+
+  /* grid-template-columns: 1fr 1fr 1fr */
+  /* grid-template-columns: 1fr minmax(200px, 2fr) 1fr; */
   /* grid-template-columns: auto 1fr auto; */
-  /* grid-template-rows: repeat(2, auto); */
+  /* grid-template-columns: fit-content(400px) 1fr auto; */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* cтворення колонок перше числи-кількість колонок,друге число - розмір колонок */
 
-  /* grid-template-columns: fit-content(300px) 1fr 1fr; */
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: 50% 50%; */
+  grid-template-rows: repeat(
+    3,
+    1fr
+  ); /* cтворення рядків перше числи-кількість рядків,друге число - розмір рядків */
+
+  gap: 30px;
+  /* gap - відступ між елементами сітки */
+  /* row-gap: ;
+  column-gap: ; */
+}
+
+@media screen and (min-width: 768px) {
+  .grid-body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-body {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+.grid-item {
+  min-width: 100%;
+  height: 92px;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.partner {
+  font-size: 60px;
+  color: #afb1b8;
+}
+.grid-header,
+.grid-side,
+.grid-content {
+  padding: 30px;
+  border: 2px double red;
+  margin-bottom: 30px;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr;
 
   gap: 30px;
 
-  /* column-gap: 30px;
-  row-gap: 10px; */
-  /* grid-template-rows: repeat(2, 50%); */
+  grid-template-areas:
+    "header header"
+    "side main";
 }
-.grid-item {
-  text-align: center;
-  border: 2px double black;
-  padding: 20px;
+
+.grid-header {
+  grid-area: header;
+}
+.grid-side {
+  grid-area: side;
+}
+.grid-main {
+  grid-area: main;
 }
