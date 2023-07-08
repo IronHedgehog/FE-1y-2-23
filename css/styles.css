@@ -170,14 +170,43 @@ a {
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: var(--active);
-  color: var(--color);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.centered-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767.99px) {
+  .container {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.99px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 
 .section {
@@ -187,4 +216,30 @@ body {
   .section {
     padding: 95px 0;
   }
+}
+
+.login {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: black;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 0px;
+  padding: 0 auto;
+  margin-right: 30px;
+}
+
+.register {
+  background-color: transparent;
+  outline: none;
+  border: 10px solid red;
+  color: black;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 25px;
+  padding: 0 auto;
+  padding: auto;
 }

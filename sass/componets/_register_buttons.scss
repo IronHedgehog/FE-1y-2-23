@@ -1,0 +1,9 @@
+.login {
+  @include accountButton(none, 0px);
+  margin-right: 30px;
+}
+
+.register {
+  @include accountButton(10px solid red, 25px);
+  padding: auto;
+}

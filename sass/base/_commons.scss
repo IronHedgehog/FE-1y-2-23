@@ -20,6 +20,11 @@
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: var(--active);
-  color: var(--color);
+  // background-color: var(--active);
+  // color: var(--color);
+}
+
+.centered-elements {
+  @include flexible();
+  // border: 5px solid red;
 }
