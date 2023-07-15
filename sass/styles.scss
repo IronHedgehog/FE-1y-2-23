@@ -53,8 +53,11 @@
 
 @import "./utils/vars.scss";
 @import "./utils/mixins";
+@import "./utils/placeholder";
 @import "./base/reset";
 @import "./base/commons";
+@import "./componets/input";
+@import "./componets/button";
 @import "./componets/container";
 @import "./componets/section";
 @import "./componets/register_buttons";

@@ -28,3 +28,39 @@ body {
   @include flexible();
   // border: 5px solid red;
 }
+
+.block {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  // transition-property: background-color;
+  // transition-delay: 0;
+  // transition-duration: 0.3s; /* 300ms*/
+  // transition-timing-function: linear;
+
+  opacity: 1;
+  transform: skew(0deg, 0deg);
+
+  transition: transform 1s linear, opacity 1s linear;
+  &:hover {
+    opacity: 0.25;
+    transform: skew(13deg, 16deg);
+  }
+}
+
+.green-block {
+  @extend .block;
+  background-color: green;
+}
+
+.yellow-block {
+  @extend .block;
+  background-color: yellow;
+}
+
+.gallery {
+  @extend %flex;
+}

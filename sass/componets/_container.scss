@@ -2,7 +2,7 @@
   @include adaptive(mobile-only) {
     @include container(420px);
   }
-  @include adaptive(768px) {
+  @include adaptive(tablet) {
     @include container(768px);
     margin-bottom: 30px;
     font-size: 16px;
@@ -10,7 +10,7 @@
   @include adaptive(tablet-only) {
     @include container(768px);
   }
-  @include adaptive(1200px) {
+  @include adaptive(desktop) {
     @include container(1200px);
   }
 
