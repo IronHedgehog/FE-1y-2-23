@@ -3,11 +3,23 @@
   --active: blue;
 }
 
+.centered-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
 .gallery {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.centered-elements {
+  color: brown;
+  font-size: 40px;
 }
 
 html,
@@ -207,6 +219,32 @@ body {
 
 .yellow-block {
   background-color: yellow;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumb {
+  max-width: 960px;
+  min-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  height: 619px;
+  background-image: url(../../assets/imgs/EATS-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section {
+    background-image: url(../../assets/imgs/EATS-2x.jpg);
+  }
 }
 
 .input {

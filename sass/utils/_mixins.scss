@@ -73,3 +73,17 @@
     }
   }
 }
+
+// Що таке flexible() у класі
+
+@mixin flexible() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-elements {
+  @include flexible();
+  @extend %something;
+  border: 1px solid gray;
+}
