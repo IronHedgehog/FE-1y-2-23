@@ -130,6 +130,21 @@ table {
   box-sizing: border-box;
 }
 
+.text-ccc {
+  width: 300px;
+  height: 200px;
+  padding: 100px;
+  border: 20px double yellow;
+}
+
+$nothing: none;
+
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ul,
 ol {
   list-style: none;

@@ -1,0 +1,16 @@
+.section {
+  height: 619px;
+
+  background-image: url(../../assets/imgs/EATS-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../assets/imgs/EATS-2x.jpg);
+  }
+}

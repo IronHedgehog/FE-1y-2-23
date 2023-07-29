@@ -160,6 +160,19 @@ table {
   box-sizing: border-box;
 }
 
+.text-ccc {
+  width: 300px;
+  height: 200px;
+  padding: 100px;
+  border: 20px double yellow;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ul,
 ol {
   list-style: none;
@@ -232,19 +245,6 @@ img {
   min-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.section {
-  height: 619px;
-  background-image: url(../../assets/imgs/EATS-1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .section {
-    background-image: url(../../assets/imgs/EATS-2x.jpg);
-  }
 }
 
 .input {
@@ -349,4 +349,23 @@ img {
   border-radius: 25px;
   padding: 0 auto;
   padding: auto;
+}
+
+.section {
+  height: 619px;
+  background-image: url(../../assets/imgs/EATS-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section {
+    background-image: url(../../assets/imgs/EATS-2x.jpg);
+  }
+}
+
+.section {
+  border-style: solid;
+  border-width: 10px;
+  border-color: green;
 }
