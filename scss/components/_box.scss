@@ -1,7 +1,0 @@
-.box {
-  @include box(300px, 300px, red);
-  @extend %centered;
-  &:hover {
-    background-color: aqua;
-  }
-}
